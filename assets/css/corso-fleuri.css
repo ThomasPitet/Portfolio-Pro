@@ -1,0 +1,112 @@
+.feature-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+.feature-list li {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.7rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+.feature-list li::before { content: none; }
+.feature-icon {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    background: rgba(249, 115, 22, 0.1);
+    border: 1px solid rgba(249, 115, 22, 0.25);
+    border-radius: var(--radius-sm);
+    padding: 0.2rem 0.5rem;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+}
+.stack-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+.stack-badge {
+    background: rgba(249, 115, 22, 0.09);
+    border: 1px solid rgba(249, 115, 22, 0.25);
+    color: var(--primary-light);
+    padding: 0.3rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 0.06em;
+}
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.screenshots-grid figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.screenshots-grid img {
+    width: 100%;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    transition: transform var(--transition), box-shadow var(--transition);
+    cursor: zoom-in;
+}
+.screenshots-grid img:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-glow);
+}
+.screenshots-grid figcaption {
+    font-size: 0.75rem;
+    color: var(--text-faint);
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+.team-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(167, 139, 250, 0.1);
+    border: 1px solid rgba(167, 139, 250, 0.3);
+    color: #a78bfa;
+    padding: 0.3rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 0.06em;
+    margin-bottom: 1rem;
+}
+#lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.88);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    cursor: zoom-out;
+}
+#lightbox.open { display: flex; }
+#lightbox img { max-width: 100%; max-height: 90vh; border-radius: var(--radius); box-shadow: 0 0 60px rgba(249,115,22,0.2); }
+#lightbox-close {
+    position: absolute;
+    top: 1.25rem; right: 1.5rem;
+    color: var(--text-muted);
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 1;
+    transition: color var(--transition);
+}
+#lightbox-close:hover { color: var(--primary); }

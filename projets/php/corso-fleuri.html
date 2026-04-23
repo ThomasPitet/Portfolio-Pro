@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CorsoFleuri — Thomas Pitet</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/corso-fleuri.css" />
+</head>
+<body>
+
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="../../index.html" class="nav-logo">Thomas Pitet</a>
+        <div class="nav-links">
+            <a href="../../index.html" class="nav-link">Accueil</a>
+            <a href="../../pages/projets.html" class="nav-link active">Projets</a>
+            <a href="../../pages/contact.html" class="nav-link nav-cta">Contact</a>
+        </div>
+        <button class="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="mobile-menu">
+        <a href="../../index.html" class="nav-link">Accueil</a>
+        <a href="../../pages/projets.html" class="nav-link active">Projets</a>
+        <a href="../../pages/contact.html" class="nav-link">Contact</a>
+    </div>
+</nav>
+
+<div class="page-hero">
+    <div class="container">
+        <span class="section-tag">// Node.js - Express - MySQL</span>
+        <h1>Corso<span>Fleuri</span></h1>
+        <p>Application de prise de commande pour restaurant — gestion des menus, commandes et tickets thermiques.</p>
+    </div>
+</div>
+
+<section class="section">
+    <div class="container" style="max-width:960px;">
+
+        <!-- Présentation -->
+        <div class="card reveal" style="margin-bottom:1.5rem;">
+            <span class="team-tag">Projet Entreprise — équipe de 4</span>
+            <h3>Présentation du projet</h3>
+            <p><strong style="color:var(--text);">CorsoFleuri</strong> est une application web de prise de commande inspirée des bornes McDo, développée pour un restaurant réel dans un contexte professionnel. Elle permet aux clients de composer leur commande depuis une interface tactile, pendant qu'en cuisine et en caisse, le back-office reçoit et imprime automatiquement les tickets thermiques.</p>
+            <p>Le projet a été réalisé en équipe de 4, avec une répartition claire des rôles : frontend, backend, base de données et intégration de l'imprimante thermique.</p>
+            <div class="stack-badges">
+                <span class="stack-badge">Node.js</span>
+                <span class="stack-badge">Express</span>
+                <span class="stack-badge">MySQL</span>
+                <span class="stack-badge">JavaScript</span>
+                <span class="stack-badge">HTML / CSS</span>
+                <span class="stack-badge">Imprimante thermique</span>
+            </div>
+        </div>
+
+        <!-- Fonctionnalités -->
+        <div class="card reveal reveal-delay-1" style="margin-bottom:1.5rem;">
+            <h3>Fonctionnalités</h3>
+            <ul class="feature-list">
+                <li><span class="feature-icon">Menu</span>Affichage des menus et produits</li>
+                <li><span class="feature-icon">Panier</span>Composition de commande en temps réel</li>
+                <li><span class="feature-icon">Ticket</span>Impression automatique de tickets thermiques</li>
+                <li><span class="feature-icon">Back-office</span>Interface de gestion des commandes</li>
+                <li><span class="feature-icon">Produits</span>Gestion des produits et catégories</li>
+                <li><span class="feature-icon">BDD</span>Base de données MySQL centralisée</li>
+                <li><span class="feature-icon">API</span>Routes Express structurées</li>
+                <li><span class="feature-icon">Design</span>Interface tactile pensée pour écran kiosque</li>
+            </ul>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="card reveal reveal-delay-2" style="margin-bottom:1.5rem;">
+            <h3>Captures d'écran — Interface caisse</h3>
+            <div class="screenshots-grid">
+                <figure>
+                    <img src="../../assets/img/Corsofleuri/M_grandfaim_caisse.png" alt="Composition Menu Grandfaim" class="screenshot-img" />
+                    <figcaption>Composition du Menu Grandfaim</figcaption>
+                </figure>
+                <figure>
+                    <img src="../../assets/img/Corsofleuri/Produit_unitaire_caisse.png" alt="Produits unitaires" class="screenshot-img" />
+                    <figcaption>Sélection des produits unitaires</figcaption>
+                </figure>
+                <figure>
+                    <img src="../../assets/img/Corsofleuri/Panier.png" alt="Panier et commande" class="screenshot-img" />
+                    <figcaption>Panier en cours de commande</figcaption>
+                </figure>
+                <figure>
+                    <img src="../../assets/img/Corsofleuri/calculatrice.png" alt="Récapitulatif et paiement" class="screenshot-img" />
+                    <figcaption>Récapitulatif et encaissement</figcaption>
+                </figure>
+            </div>
+
+            <h3 style="margin-top:2rem;">Captures d'écran — Interface admin</h3>
+            <div class="screenshots-grid">
+                <figure>
+                    <img src="../../assets/img/Corsofleuri/Menu_Admin.png" alt="Gestion des menus" class="screenshot-img" />
+                    <figcaption>Gestion des menus</figcaption>
+                </figure>
+                <figure>
+                    <img src="../../assets/img/Corsofleuri/Produit_Admin.png" alt="Gestion des produits" class="screenshot-img" />
+                    <figcaption>Gestion des produits</figcaption>
+                </figure>
+                <figure>
+                    <img src="../../assets/img/Corsofleuri/user_Admin.png" alt="Gestion des utilisateurs" class="screenshot-img" />
+                    <figcaption>Gestion des utilisateurs</figcaption>
+                </figure>
+                <figure>
+                    <img src="../../assets/img/Corsofleuri/récap_Admin.png" alt="Récapitulatif des ventes" class="screenshot-img" />
+                    <figcaption>Récapitulatif des ventes</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- Architecture -->
+        <div class="card reveal reveal-delay-3" style="margin-bottom:1.5rem;">
+            <h3>Architecture technique</h3>
+            <p>Le projet suit une architecture <strong style="color:var(--primary);">MVC côté serveur</strong> avec Node.js et Express :</p>
+            <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:1rem; margin-top:1rem;">
+                <div style="background:var(--surface-2); border-radius:var(--radius-sm); padding:1rem; border:1px solid var(--border);">
+                    <div style="color:var(--primary); font-weight:700; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.5rem;">Frontend</div>
+                    <p style="font-size:0.82rem; margin:0;">Interface HTML / CSS / JS vanilla — affichage des menus, composition du panier, validation de commande.</p>
+                </div>
+                <div style="background:var(--surface-2); border-radius:var(--radius-sm); padding:1rem; border:1px solid var(--border);">
+                    <div style="color:var(--primary); font-weight:700; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.5rem;">Backend</div>
+                    <p style="font-size:0.82rem; margin:0;">Serveur Express avec routes REST — gestion des commandes, produits et catégories via l'API.</p>
+                </div>
+                <div style="background:var(--surface-2); border-radius:var(--radius-sm); padding:1rem; border:1px solid var(--border);">
+                    <div style="color:var(--primary); font-weight:700; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.5rem;">Base de données</div>
+                    <p style="font-size:0.82rem; margin:0;">MySQL — tables produits, catégories, commandes et lignes de commande.</p>
+                </div>
+                <div style="background:var(--surface-2); border-radius:var(--radius-sm); padding:1rem; border:1px solid var(--border);">
+                    <div style="color:var(--primary); font-weight:700; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.5rem;">Impression</div>
+                    <p style="font-size:0.82rem; margin:0;">Intégration d'une imprimante thermique — génération et envoi automatique des tickets à la validation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="reveal" style="display:flex; gap:0.75rem; flex-wrap:wrap; justify-content:center; padding:1rem 0 2rem;">
+            <a href="https://github.com/NathanCBT/Corso-Fleuri" target="_blank" rel="noopener" class="btn btn-primary">
+                Voir le dépôt GitHub
+            </a>
+            <a href="../../pages/projets.html" class="btn btn-outline">Retour aux projets</a>
+        </div>
+
+    </div>
+</section>
+
+<div id="lightbox">
+    <button id="lightbox-close" aria-label="Fermer">&#x2715;</button>
+    <img id="lightbox-img" src="" alt="" />
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-logo">Thomas Pitet</div>
+        <p class="footer-sub">Développeur Fullstack en formation &bull; <a href="https://github.com/ThomasPitet" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+</footer>
+
+<script src="../../assets/js/loader.js"></script>
+<script src="../../assets/js/navbar.js"></script>
+<script src="../../assets/js/reveal.js"></script>
+<script src="../../assets/js/skill-bars.js"></script>
+<script src="../../assets/js/typewriter.js"></script>
+<script src="../../assets/js/particles.js"></script>
+<script src="../../assets/js/contact-form.js"></script>
+<script src="../../assets/js/lightbox.js"></script>
+</body>
+</html>
