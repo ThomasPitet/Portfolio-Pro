@@ -2,38 +2,50 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Thomas Pitet — Développeur Fullstack & Motard</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+    <title>Thomas Pitet — Développeur Fullstack &amp; Motard</title>
+    <link rel="stylesheet"
+          href="assets/css/style.css?v=4" />
 </head>
 <body>
-
-<!-- LOADER -->
-<div id="loader">
-    <div class="loader-text">THOMAS.DEV</div>
-    <div class="loader-bar-wrap"><div class="loader-bar-fill"></div></div>
-</div>
 
 <!-- NAVBAR -->
 <nav id="navbar">
     <div class="nav-container">
-        <a href="index.html" class="nav-logo">Thomas Pitet</a>
+        <a href="index.html"
+           class="nav-logo">Thomas Pitet</a>
         <div class="nav-links">
-            <a href="index.html" class="nav-link active">Accueil</a>
-            <a href="pages/projets.html" class="nav-link">Projets</a>
-            <a href="pages/contact.html" class="nav-link nav-cta">Contact</a>
+            <a href="index.html"
+               class="nav-link active">Accueil</a>
+            <a href="pages/projets.html"
+               class="nav-link">Projets</a>
+            <a href="pages/cv.html"
+               class="nav-link">CV</a>
+            <a href="pages/contact.html"
+               class="nav-link nav-cta">Contact</a>
         </div>
-        <button class="hamburger" aria-label="Menu">
+        <button class="hamburger"
+                aria-label="Menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
             <span></span><span></span><span></span>
         </button>
     </div>
-    <div class="mobile-menu">
-        <a href="index.html" class="nav-link active">Accueil</a>
-        <a href="pages/projets.html" class="nav-link">Projets</a>
-        <a href="pages/contact.html" class="nav-link">Contact</a>
+    <div class="mobile-menu"
+         id="mobile-menu">
+        <a href="index.html"
+           class="nav-link active">Accueil</a>
+        <a href="pages/projets.html"
+           class="nav-link">Projets</a>
+        <a href="pages/cv.html"
+           class="nav-link">CV</a>
+        <a href="pages/contact.html"
+           class="nav-link">Contact</a>
     </div>
 </nav>
 
+<main>
 <!-- HERO -->
 <section id="hero">
     <div class="hero-bg"></div>
@@ -42,21 +54,27 @@
 
     <div class="hero-inner">
         <div class="hero-content">
-            <div class="hero-badge">Rider &amp; Developer</div>
-            <h1 class="hero-name">Thomas<br/><span class="accent">Pitet</span></h1>
-            <p class="hero-subtitle">
-                <span id="typewriter">Développeur Fullstack</span><span class="cursor-blink">|</span>
+            <div class="hero-badge">
+                Rider &amp; Developer &bull;
+            </div>
+            <h1 class="hero-name">
+                Thomas<br/><span class="accent">Pitet</span>
+            </h1>
+            <p class="hero-quote">
+                "La seul unité de mesure est le temps"
             </p>
-            <p class="hero-quote">"La forme l'emporte sur la fonction."</p>
             <div class="hero-cta">
-                <a href="pages/projets.html" class="btn btn-primary">Mes projets</a>
-                <a href="pages/contact.html" class="btn btn-outline">Me contacter</a>
+                <a href="pages/projets.html"
+                   class="btn btn-primary">Mes projets</a>
+                <a href="pages/contact.html"
+                   class="btn btn-outline">Me contacter</a>
             </div>
         </div>
         <div class="hero-photo-col">
             <div class="hero-photo-ring">
                 <div class="hero-photo-inner">
-                    <img src="assets/img/thomas.jpg" alt="Thomas Pitet" />
+                    <img src="assets/img/thomas.jpg"
+                         alt="Thomas Pitet" />
                 </div>
             </div>
         </div>
@@ -72,25 +90,56 @@
 <section class="section section-alt">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-tag">// À propos</span>
+            <span class="section-tag">À propos · 私について</span>
             <h2 class="section-title">Qui suis-je ?</h2>
             <div class="section-line"></div>
         </div>
         <div class="about-grid">
-            <div class="card reveal reveal-delay-1">
-                <div class="card-icon">Cuisine</div>
-                <h3>Biographie</h3>
-                <p>Après un parcours en cuisine qui m'a appris la réactivité, je concrétise ma reconversion dans le développement web. Porté par une curiosité pour la logique du code et l'univers tech, j'ai choisi de me former en développement fullstack.</p>
+            <div class="about-main-card reveal reveal-delay-1">
+                <div class="about-main-content">
+                    <div class="card-icon">Cuisine</div>
+                    <h3>Biographie</h3>
+                    <p>
+                        Après un parcours en cuisine qui m'a appris la
+                        réactivité, je concrétise ma reconversion dans le
+                        développement web. Porté par une curiosité pour la
+                        logique du code et l'univers tech, j'ai choisi de me
+                        former en développement fullstack.
+                    </p>
+                </div>
+                <div class="about-main-image">
+                    <img src="assets/moi/cuisine.jpg"
+                         alt="Cuisine en action" />
+                </div>
             </div>
-            <div class="card reveal reveal-delay-2">
-                <div class="card-icon">Formation</div>
-                <h3>Formation</h3>
-                <p>1ère année de développement Fullstack. Mon objectif : créer des applications modernes et performantes, tout en continuant à apprendre et évoluer dans ce domaine passionnant.</p>
-            </div>
-            <div class="card reveal reveal-delay-3">
-                <div class="card-icon">Moto</div>
-                <h3>Passion Moto</h3>
-                <p>La moto est bien plus qu'un loisir — c'est un état d'esprit. Liberté, précision, adrénaline. Je veux créer des applications qui réunissent la communauté des riders.</p>
+            <div class="about-side-cards">
+                <div class="card reveal reveal-delay-2">
+                    <div class="card-icon">Formation</div>
+                    <h3>Formation</h3>
+                    <p>
+                        1ère année de développement Fullstack. Mon objectif :
+                        créer des applications modernes et performantes, tout
+                        en continuant à apprendre et évoluer dans ce domaine
+                        passionnant.
+                    </p>
+                    <div class="about-card-image">
+                        <img src="assets/moi/travail.png"
+                             alt="Travail en écran" />
+                    </div>
+                </div>
+                <div class="card reveal reveal-delay-3">
+                    <div class="card-icon">Passion Moto</div>
+                    <h3>Passion Moto</h3>
+                    <p>
+                        La moto est bien plus qu'un loisir — c'est un état
+                        d'esprit. Liberté, précision, adrénaline. Je veux créer
+                        des applications qui réunissent la communauté des riders.
+                    </p>
+                    <div class="about-card-image">
+                        <img src="assets/moi/moto.jpg"
+                             alt="Moto en balade" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -100,73 +149,106 @@
 <section class="section">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-tag">// Compétences</span>
+            <span class="section-tag">Compétences &middot; スキル</span>
             <h2 class="section-title">Stack Technique</h2>
             <div class="section-line"></div>
         </div>
-        <div class="skills-grid">
-            <div class="card reveal reveal-delay-1">
-                <h3>Frontend</h3>
-                <div class="skill-item">
-                    <div class="skill-header"><span class="skill-label">HTML / CSS</span><span class="skill-pct">80%</span></div>
-                    <div class="skill-track"><div class="skill-fill" data-pct="80"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header"><span class="skill-label">JavaScript</span><span class="skill-pct">55%</span></div>
-                    <div class="skill-track"><div class="skill-fill" data-pct="55"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header"><span class="skill-label">Kotlin</span><span class="skill-pct">40%</span></div>
-                    <div class="skill-track"><div class="skill-fill" data-pct="40"></div></div>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag">HTML</span>
-                    <span class="tech-tag">CSS</span>
-                    <span class="tech-tag">JS</span>
-                    <span class="tech-tag">Kotlin</span>
+        <div class="skills-layout reveal reveal-delay-1">
+            <div class="skills-intro">
+                <span class="section-tag">Compétences · スキル</span>
+                <h2 class="section-title">Stack Technique</h2>
+                <p class="skills-intro-text">
+                    Je construis des interfaces modernes et des systèmes
+                    backend solides, tout en gardant une attention particulière
+                    à la performance, la maintenabilité et l'expérience utilisateur.
+                </p>
+                <div class="skills-highlights">
+                    <span class="skill-pill">Frontend</span>
+                    <span class="skill-pill">Backend</span>
+                    <span class="skill-pill">BDD</span>
+                    <span class="skill-pill">DevOps</span>
                 </div>
             </div>
-            <div class="card reveal reveal-delay-2">
-                <h3>Backend</h3>
-                <div class="skill-item">
-                    <div class="skill-header"><span class="skill-label">PHP</span><span class="skill-pct">50%</span></div>
-                    <div class="skill-track"><div class="skill-fill" data-pct="50"></div></div>
+            <div class="skills-grid">
+                <div class="card reveal reveal-delay-1">
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-bullet">◆</span>
+                            <strong>HTML5 / CSS3</strong> &ndash; Intégration
+                            moderne &amp; Responsive
+                        </li>
+                        <li>
+                            <span class="skill-bullet">◆</span>
+                            <strong>JavaScript (JS)</strong> &ndash; Dynamisme
+                            &amp; DOM Manipulation
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML / CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-header"><span class="skill-label">Langage C</span><span class="skill-pct">60%</span></div>
-                    <div class="skill-track"><div class="skill-fill" data-pct="60"></div></div>
+                <div class="card reveal reveal-delay-2">
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-bullet">◆</span>
+                            <strong>PHP &amp; NodeJS</strong> &ndash; Web
+                            &amp; API Backend
+                        </li>
+                        <li>
+                            <span class="skill-bullet">◆</span>
+                            <strong>AdonisJS</strong> &ndash; Framework
+                            Node.js MVC
+                        </li>
+                        <li>
+                            <span class="skill-bullet">◆</span>
+                            <strong>C / Java / C++</strong> &ndash; Algorithmique
+                            &amp; POO
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">JAVA</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">NodeJS</span>
+                        <span class="tech-tag">AdonisJS</span>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-header"><span class="skill-label">Java / C++</span><span class="skill-pct">35%</span></div>
-                    <div class="skill-track"><div class="skill-fill" data-pct="35"></div></div>
+                <div class="card reveal reveal-delay-3">
+                    <h3>Base de données</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-bullet">◆</span>
+                            <strong>MySQL</strong> &ndash; Modelisation,
+                            requetes &amp; gestion BDD
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">MySQL</span>
+                    </div>
                 </div>
-                <div class="tech-tags">
-                    <span class="tech-tag">PHP</span>
-                    <span class="tech-tag">C</span>
-                    <span class="tech-tag">Java</span>
-                    <span class="tech-tag">C++</span>
-                </div>
-            </div>
-            <div class="card reveal reveal-delay-3">
-                <h3>DevOps &amp; Outils</h3>
-                <div class="skill-item">
-                    <div class="skill-header"><span class="skill-label">Git</span><span class="skill-pct">65%</span></div>
-                    <div class="skill-track"><div class="skill-fill" data-pct="65"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header"><span class="skill-label">Docker</span><span class="skill-pct">40%</span></div>
-                    <div class="skill-track"><div class="skill-fill" data-pct="40"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header"><span class="skill-label">MySQL</span><span class="skill-pct">45%</span></div>
-                    <div class="skill-track"><div class="skill-fill" data-pct="45"></div></div>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag">Git</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">MySQL</span>
-                    <span class="tech-tag">Ubuntu</span>
-                    <span class="tech-tag">Vite</span>
+                <div class="card reveal reveal-delay-4">
+                    <h3>DevOps &amp; Outils</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-bullet">◆</span>
+                            <strong>Docker &amp; Git</strong> &ndash; Conteneurs
+                            &amp; Versioning
+                        </li>
+                        <li>
+                            <span class="skill-bullet">◆</span>
+                            <strong>Ubuntu</strong> &ndash; Environnement
+                            Linux
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Ubuntu</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,26 +259,23 @@
 <section class="section section-alt">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-tag">// Objectifs</span>
+            <span class="section-tag">Objectifs · 目標</span>
             <h2 class="section-title">Mes Ambitions</h2>
             <div class="section-line"></div>
         </div>
         <div class="objectives-grid">
             <div class="obj-card reveal reveal-delay-1">
-                <h3>Professionnels</h3>
+                <h3>Mes objectifs</h3>
                 <ul>
-                    <li>Obtenir une alternance (2ème et 3ème année)</li>
-                    <li>Décrocher mon Bachelor Fullstack</li>
-                    <li>Travailler au Japon comme développeur</li>
+                    <li>Faire mes 2 ans d'alternance</li>
+                    <li>Apprendre le japonais</li>
+                    <li>Faire un séjour linguistique</li>
+                    <li>Créer une app pour la communauté motard</li>
                 </ul>
-            </div>
-            <div class="obj-card reveal reveal-delay-2">
-                <h3>Personnels</h3>
-                <ul>
-                    <li>Apprendre la culture Japonaise</li>
-                    <li>Créer une application pour motards</li>
-                    <li>Partager ma passion moto en ligne</li>
-                </ul>
+                <p class="objective-final">
+                    <span class="objective-final-label">Objectif final</span>
+                    <span class="objective-final-value">vivre au Japon</span>
+                </p>
             </div>
         </div>
     </div>
@@ -205,35 +284,37 @@
 <!-- CTA -->
 <section class="cta-section">
     <div class="container reveal">
-        <span class="section-tag">// Contact</span>
+        <span class="section-tag">Contact · お問い合わせ</span>
         <h2 class="section-title">Travaillons ensemble</h2>
-        <p style="color:var(--text-faint); margin-top:0.5rem;">Ouvert aux opportunités d'alternance et de collaboration.</p>
+        <p style="color:var(--text-faint); margin-top:0.5rem;">
+            Ouvert aux opportunités d'alternance et de collaboration.
+        </p>
         <div class="cta-actions">
-            <a href="pages/projets.html" class="btn btn-outline">Voir mes projets</a>
-            <a href="pages/contact.html" class="btn btn-primary">Me contacter</a>
+            <a href="pages/projets.html"
+               class="btn btn-outline">Voir mes projets</a>
+            <a href="pages/contact.html"
+               class="btn btn-primary">Me contacter</a>
         </div>
     </div>
 </section>
+</main>
 
 <!-- FOOTER -->
 <footer class="site-footer">
     <div class="container">
         <div class="footer-logo">Thomas Pitet</div>
-        <p class="footer-sub">Développeur Fullstack en formation &bull; <a href="https://github.com/ThomasPitet" target="_blank" rel="noopener">GitHub</a></p>
+        <p class="footer-sub">
+            Développeur Fullstack en formation &bull;
+            <a href="https://github.com/ThomasPitet"
+               target="_blank"
+               rel="noopener">GitHub</a>
+        </p>
     </div>
 </footer>
 
-<script src="assets/js/loader.js"></script>
 <script src="assets/js/navbar.js"></script>
 <script src="assets/js/reveal.js"></script>
 <script src="assets/js/skill-bars.js"></script>
-<script src="assets/js/typewriter.js"></script>
 <script src="assets/js/particles.js"></script>
-<script src="assets/js/contact-form.js"></script>
 </body>
 </html>
-
-
-
-
-

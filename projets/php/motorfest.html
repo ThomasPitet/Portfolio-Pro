@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+    <title>MotorFest — Thomas Pitet</title>
+    <link rel="stylesheet"
+          href="../../assets/css/style.css?v=4" />
+    <link rel="stylesheet"
+          href="../../assets/css/motorfest.css" />
+</head>
+<body>
+
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="../../index.html"
+           class="nav-logo">Thomas Pitet</a>
+        <div class="nav-links">
+            <a href="../../index.html"
+               class="nav-link">Accueil</a>
+            <a href="../../pages/projets.html"
+               class="nav-link active">Projets</a>
+            <a href="../../pages/contact.html"
+               class="nav-link nav-cta">Contact</a>
+        </div>
+        <button class="hamburger"
+                aria-label="Menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="mobile-menu"
+         id="mobile-menu">
+        <a href="../../index.html"
+           class="nav-link">Accueil</a>
+        <a href="../../pages/projets.html"
+           class="nav-link active">Projets</a>
+        <a href="../../pages/contact.html"
+           class="nav-link">Contact</a>
+    </div>
+</nav>
+
+<main>
+<div class="page-hero">
+    <div class="container">
+        <span class="section-tag">Node.js · Express · MySQL · Chart.js</span>
+        <h1>Motor<span>Fest</span></h1>
+        <p>
+            Application web de catalogue, consultation et comparaison de
+            véhicules avec graphiques radar et gestion de favoris.
+        </p>
+    </div>
+</div>
+
+<section class="section">
+    <div class="container"
+         style="max-width:960px;">
+
+        <div class="card reveal"
+             style="margin-bottom:1.5rem;">
+            <h3>Présentation du projet</h3>
+            <p>
+                <strong style="color:var(--text);">MotorFest</strong> est une
+                application web développée avec <strong
+                style="color:var(--primary);">Node.js,
+                Express, MySQL et EJS</strong>.
+                Elle permet aux passionnés d'automobile et de jeu vidéo de
+                consulter un catalogue complet de véhicules, d'analyser leurs
+                performances détaillées via des graphiques radar interactifs
+                (Chart.js), de comparer plusieurs modèles côte à côte et de
+                sauvegarder leurs favoris.
+            </p>
+            <p>
+                Le projet est structuré selon un pattern <strong
+                style="color:var(--primary);">MVC strict</strong> (Modèles,
+                Vues, Contrôleurs, Routeurs) avec validation des formulaires par
+                Zod et gestion de sessions utilisateurs sécurisées.
+            </p>
+            <div class="stack-badges">
+                <span class="stack-badge">Node.js</span>
+                <span class="stack-badge">Express.js</span>
+                <span class="stack-badge">MySQL</span>
+                <span class="stack-badge">EJS</span>
+                <span class="stack-badge">Tailwind CSS</span>
+                <span class="stack-badge">Chart.js</span>
+                <span class="stack-badge">Zod</span>
+                <span class="stack-badge">MVC</span>
+            </div>
+        </div>
+
+        <div class="card reveal reveal-delay-1"
+             style="margin-bottom:1.5rem;">
+            <h3>Fonctionnalités principales</h3>
+            <ul class="feature-list">
+                <li>
+                    <span class="feature-icon">Catalogue</span>
+                    Catalogue complet de véhicules filtrable
+                </li>
+                <li>
+                    <span class="feature-icon">Radar</span>
+                    Graphiques radar de performance (Chart.js)
+                </li>
+                <li>
+                    <span class="feature-icon">Compare</span>
+                    Comparateur côte à côte de véhicules
+                </li>
+                <li>
+                    <span class="feature-icon">Favoris</span>
+                    Gestion des favoris (LocalStorage &amp; Serveur)
+                </li>
+                <li>
+                    <span class="feature-icon">Auth</span>
+                    Inscription &amp; Connexion (Session Cookie)
+                </li>
+                <li>
+                    <span class="feature-icon">Filtres</span>
+                    Filtres par catégorie, marque, période &amp; stats
+                </li>
+                <li>
+                    <span class="feature-icon">MVC</span>
+                    Architecture MVC &amp; Base MySQL
+                </li>
+                <li>
+                    <span class="feature-icon">Zod</span>
+                    Validation des données avec Zod
+                </li>
+            </ul>
+        </div>
+
+        <div class="card reveal reveal-delay-2"
+             style="margin-bottom:1.5rem;">
+            <h3>Captures d'écran</h3>
+            <div class="screenshots-grid">
+                <figure>
+                    <img src="../../assets/img/motorfest/Accueil.png"
+                         alt="Catalogue MotorFest"
+                         class="screenshot-img" />
+                    <figcaption>Catalogue &amp; Filtres</figcaption>
+                </figure>
+                <figure>
+                    <img src="../../assets/img/motorfest/Detail.png"
+                         alt="Fiche véhicule MotorFest"
+                         class="screenshot-img" />
+                    <figcaption>Fiche véhicule &amp; Radar Chart</figcaption>
+                </figure>
+                <figure>
+                    <img src="../../assets/img/motorfest/Compare.png"
+                         alt="Comparateur de véhicules"
+                         class="screenshot-img" />
+                    <figcaption>Comparateur côte à côte</figcaption>
+                </figure>
+                <figure>
+                    <img src="../../assets/img/motorfest/Favori.png"
+                         alt="Favoris MotorFest"
+                         class="screenshot-img" />
+                    <figcaption>Page des Favoris</figcaption>
+                </figure>
+                <figure>
+                    <img src="../../assets/img/motorfest/Categori.png"
+                         alt="Catégories MotorFest"
+                         class="screenshot-img" />
+                    <figcaption>Navigation par Catégories</figcaption>
+                </figure>
+                <figure>
+                    <img src="../../assets/img/motorfest/Filtre.png"
+                         alt="Filtres avancés"
+                         class="screenshot-img" />
+                    <figcaption>Filtres avancés</figcaption>
+                </figure>
+                <figure>
+                    <img src="../../assets/img/motorfest/connexion.png"
+                         alt="Page de connexion"
+                         class="screenshot-img" />
+                    <figcaption>Connexion &amp; Inscription</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="card reveal reveal-delay-3"
+             style="margin-bottom:1.5rem;">
+            <h3>Architecture Technique MVC</h3>
+            <p>
+                L'application respecte les principes de séparation des
+                responsabilités :
+            </p>
+            <div style="display:grid;
+                        grid-template-columns:repeat(
+                            auto-fill, minmax(200px, 1fr));
+                        gap:1rem;
+                        margin-top:1rem;">
+                <div style="background:var(--surface-2);
+                            border-radius:var(--radius-sm);
+                            padding:1rem;
+                            border:1px solid var(--border);">
+                    <div style="color:var(--primary);
+                                font-weight:700;
+                                font-size:0.8rem;
+                                text-transform:uppercase;
+                                letter-spacing:0.1em;
+                                margin-bottom:0.5rem;">Modèles</div>
+                    <p style="font-size:0.82rem; margin:0;">
+                        Requêtes SQL MySQL encapsulées (vehicles, user,
+                        categories, comparaison).
+                    </p>
+                </div>
+                <div style="background:var(--surface-2);
+                            border-radius:var(--radius-sm);
+                            padding:1rem;
+                            border:1px solid var(--border);">
+                    <div style="color:var(--primary);
+                                font-weight:700;
+                                font-size:0.8rem;
+                                text-transform:uppercase;
+                                letter-spacing:0.1em;
+                                margin-bottom:0.5rem;">Contrôleurs</div>
+                    <p style="font-size:0.82rem; margin:0;">
+                        Logique métier Express pour gérer les catalogues,
+                        comparaisons, favoris et sessions.
+                    </p>
+                </div>
+                <div style="background:var(--surface-2);
+                            border-radius:var(--radius-sm);
+                            padding:1rem;
+                            border:1px solid var(--border);">
+                    <div style="color:var(--primary);
+                                font-weight:700;
+                                font-size:0.8rem;
+                                text-transform:uppercase;
+                                letter-spacing:0.1em;
+                                margin-bottom:0.5rem;">Vues EJS</div>
+                    <p style="font-size:0.82rem; margin:0;">
+                        Templates dynamiques EJS stylisés avec Tailwind CSS et
+                        rendu dynamique côté serveur.
+                    </p>
+                </div>
+                <div style="background:var(--surface-2);
+                            border-radius:var(--radius-sm);
+                            padding:1rem;
+                            border:1px solid var(--border);">
+                    <div style="color:var(--primary);
+                                font-weight:700;
+                                font-size:0.8rem;
+                                text-transform:uppercase;
+                                letter-spacing:0.1em;
+                                margin-bottom:0.5rem;">Radar Chart</div>
+                    <p style="font-size:0.82rem; margin:0;">
+                        Visualisation de la puissance, vitesse, accélération et
+                        maniabilité via Chart.js.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal"
+             style="display:flex;
+                    gap:0.75rem;
+                    flex-wrap:wrap;
+                    justify-content:center;
+                    padding:1rem 0 2rem;">
+            <a href="../../pages/projets.html"
+               class="btn btn-outline">← Retour aux projets</a>
+        </div>
+
+    </div>
+</section>
+</main>
+
+<div id="lightbox">
+    <button id="lightbox-close"
+            aria-label="Fermer">x</button>
+    <img id="lightbox-img"
+         src=""
+         alt="" />
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-logo">Thomas Pitet</div>
+        <p class="footer-sub">
+            Développeur Fullstack en formation &bull;
+            <a href="https://github.com/ThomasPitet"
+               target="_blank"
+               rel="noopener">GitHub</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../../assets/js/navbar.js"></script>
+<script src="../../assets/js/reveal.js"></script>
+<script src="../../assets/js/lightbox.js"></script>
+</body>
+</html>

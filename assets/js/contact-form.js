@@ -5,7 +5,8 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
-    const successEl = document.getElementById('form-success') || form.previousElementSibling;
+    const successEl = document.getElementById('form-success') ||
+                      form.previousElementSibling;
 
     btn.disabled = true;
     btn.textContent = 'Envoi en cours…';

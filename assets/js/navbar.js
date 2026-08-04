@@ -1,4 +1,4 @@
-﻿(function initNavbar() {
+(function initNavbar() {
   const navbar = document.getElementById('navbar');
   if (!navbar) return;
 
@@ -10,13 +10,20 @@
   const path  = window.location.pathname;
   links.forEach(link => {
     const href = link.getAttribute('href') || '';
-    if (
-      (path.endsWith('index.html') || path === '/' || path.endsWith('/portfolio/'))
-      && (href === 'index.html' || href === '../index.html' || href === '../../index.html' || href === '#')
-    ) {
+    const isHomePath = path.endsWith('index.html') ||
+                       path === '/' ||
+                       path.endsWith('/portfolio/');
+    const isHomeHref = href === 'index.html' ||
+                       href === '../index.html' ||
+                       href === '../../index.html' ||
+                       href === '#';
+    if (isHomePath && isHomeHref) {
       link.classList.add('active');
-    } else if (href && path.includes(href.replace('../', '').replace('../../', ''))) {
-      link.classList.add('active');
+    } else if (href) {
+      const cleanHref = href.replace('../', '').replace('../../', '');
+      if (path.includes(cleanHref)) {
+        link.classList.add('active');
+      }
     }
   });
 
@@ -24,13 +31,15 @@
   const mobileMenu = navbar.querySelector('.mobile-menu');
   if (hamburger && mobileMenu) {
     hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      mobileMenu.classList.toggle('open');
+      const isOpen = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
     mobileMenu.querySelectorAll('.nav-link').forEach(l =>
       l.addEventListener('click', () => {
         hamburger.classList.remove('open');
         mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
       })
     );
   }
