@@ -1,117 +1,259 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CV — Thomas Pitet</title>
-    <link rel="stylesheet"
-          href="../assets/css/style.css?v=2" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=5" />
 </head>
+
 <body>
 
-<nav id="navbar">
-    <div class="nav-container">
-        <a href="../index.html"
-           class="nav-logo">Thomas Pitet</a>
-        <div class="nav-links">
-            <a href="../index.html"
-               class="nav-link">Accueil</a>
-            <a href="projets.html"
-               class="nav-link">Projets</a>
-            <a href="cv.html"
-               class="nav-link active">CV</a>
-            <a href="contact.html"
-               class="nav-link nav-cta">Contact</a>
-        </div>
-        <button class="hamburger"
-                aria-label="Menu"
-                aria-expanded="false"
-                aria-controls="mobile-menu">
-            <span></span><span></span><span></span>
-        </button>
-    </div>
-    <div class="mobile-menu"
-         id="mobile-menu">
-        <a href="../index.html"
-           class="nav-link">Accueil</a>
-        <a href="projets.html"
-           class="nav-link">Projets</a>
-        <a href="cv.html"
-           class="nav-link active">CV</a>
-        <a href="contact.html"
-           class="nav-link">Contact</a>
-    </div>
-</nav>
-
-<main>
-<section class="section section-alt">
-    <div class="container">
-        <div class="section-header reveal">
-            <span class="section-tag">CV · 履歴書</span>
-            <h2 class="section-title">Mon CV</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="about-main-card reveal reveal-delay-1">
-            <div class="about-main-content">
-                <h3>Découvrez mon parcours</h3>
-                <p>
-                    Consultez mon CV directement sur cette page avant de
-                    le télécharger.
-                </p>
-                <div class="pdf-preview">
-                    <embed src="../assets/docs/CV Pro Thomas Pitet.pdf"
-                           type="application/pdf"
-                           width="100%"
-                           height="720px" />
-                    <p style="color: var(--text-faint); margin-top: 1rem;">
-                        Si le PDF ne s'affiche pas, utilisez le bouton
-                        ci-dessous pour le télécharger.
-                    </p>
-                </div>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Thomas Pitet</a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Accueil</a>
+                <a href="projets.html" class="nav-link">Projets</a>
+                <a href="cv.html" class="nav-link active">CV</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact</a>
             </div>
+            <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-    </div>
-</section>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="../index.html" class="nav-link">Accueil</a>
+            <a href="projets.html" class="nav-link">Projets</a>
+            <a href="cv.html" class="nav-link active">CV</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
 
-<section class="section">
-    <div class="container">
-        <div class="section-header reveal">
-            <span class="section-tag">Téléchargement</span>
-            <h2 class="section-title">Mon CV en PDF</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="cta-section">
-            <div class="container reveal">
-                <p style="color:var(--text-faint); margin-top:0.5rem; max-width: 600px; margin-left:auto; margin-right:auto;">
-                    Vous pouvez télécharger mon CV directement au format PDF.
-                </p>
-                <div class="cta-actions" style="margin-top: 2rem;">
-                    <a href="../assets/docs/CV Pro Thomas Pitet.pdf"
-                       class="btn btn-primary"
-                       download>
-                        Télécharger le CV
+    <main>
+        <div class="page-hero">
+            <div class="container">
+                <span class="section-tag">CV · 履歴書</span>
+                <h1>Mon <span>Parcours</span> &amp; CV</h1>
+                <p>Développeur Fullstack en formation &bull; À la recherche d'une alternance de 2 ans pour septembre
+                    2025/2026.</p>
+                <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:1.5rem;">
+                    <a href="../assets/docs/CV Pro Thomas Pitet.pdf" class="btn btn-primary" download>
+                        Télécharger le CV (PDF)
+                    </a>
+                    <a href="../assets/docs/CV Pro Thomas Pitet.pdf" target="_blank" rel="noopener"
+                        class="btn btn-outline">
+                        Aperçu Plein Écran
                     </a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-</main>
 
-<footer class="site-footer">
-    <div class="container">
-        <div class="footer-logo">Thomas Pitet</div>
-        <p class="footer-sub">
-            Développeur Fullstack en formation &bull;
-            <a href="https://github.com/ThomasPitet"
-               target="_blank"
-               rel="noopener">GitHub</a>
-        </p>
-    </div>
-</footer>
+        <section class="section">
+            <div class="container">
+                <div class="cv-layout">
+                    <!-- Left Column: Formations & Experiences -->
+                    <div>
+                        <!-- Formation -->
+                        <div class="cv-card reveal">
+                            <div class="cv-card-header">
+                                <span
+                                    style="font-size:0.82rem; font-weight:700; color:var(--primary); text-transform:uppercase; letter-spacing:0.12em;">Parcours</span>
+                                <h3>Formation</h3>
+                            </div>
+                            <div class="cv-timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2025 — 2028</div>
+                                    <div class="timeline-title">Bachelor Fullstack</div>
+                                    <div class="timeline-sub">Code Drivers</div>
+                                    <div class="timeline-desc">
+                                        Formation spécialisée en développement web fullstack, architecture logicielle,
+                                        bases de données et DevOps.
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2022 — 2025</div>
+                                    <div class="timeline-title">Bac STI2D (SIN)</div>
+                                    <div class="timeline-sub">Lycée Émile Zola &middot; Châteaudun</div>
+                                    <div class="timeline-desc">
+                                        Spécialité Systèmes d'Information et Numérique. Initiation aux réseaux,
+                                        électronique et programmation.
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2021 — 2022</div>
+                                    <div class="timeline-title">CAP Cuisine (5 mois)</div>
+                                    <div class="timeline-sub">Seconde d'orientation professionnelle</div>
+                                    <div class="timeline-desc">
+                                        Découverte du travail d'équipe intense, rigueur, gestion du stress et
+                                        réactivité.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-<script src="../assets/js/navbar.js"></script>
-<script src="../assets/js/reveal.js"></script>
+                        <!-- Expériences -->
+                        <div class="cv-card reveal reveal-delay-1">
+                            <div class="cv-card-header">
+                                <span
+                                    style="font-size:0.82rem; font-weight:700; color:var(--primary); text-transform:uppercase; letter-spacing:0.12em;">Expériences</span>
+                                <h3>Expériences Professionnelles</h3>
+                            </div>
+                            <div class="cv-timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2021 — 2022 (5 mois)</div>
+                                    <div class="timeline-title">CAP Cuisinier en Brasserie</div>
+                                    <div class="timeline-sub">Brasserie L'Appétit "Le 122" &middot; Ormes</div>
+                                    <div class="timeline-desc">
+                                        Préparation des entrées/desserts, gestion du coup de feu, propreté et travail
+                                        d'équipe sous pression.
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2022 (1 semaine)</div>
+                                    <div class="timeline-title">Stage Pépinière</div>
+                                    <div class="timeline-sub">Pépinière Crogny</div>
+                                    <div class="timeline-desc">
+                                        Découverte et travail au sein de différents domaines de l'exploitation.
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2022 (2 semaines)</div>
+                                    <div class="timeline-title">Stage Carrosserie</div>
+                                    <div class="timeline-sub">AD Carrosserie</div>
+                                    <div class="timeline-desc">
+                                        Découverte des métiers de la carrosserie automobile et précision manuelle.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Skills, Languages & Soft Skills -->
+                    <div>
+                        <!-- Compétences Stack -->
+                        <div class="cv-card reveal">
+                            <div class="cv-card-header">
+                                <span
+                                    style="font-size:0.82rem; font-weight:700; color:var(--primary); text-transform:uppercase; letter-spacing:0.12em;">Technologies</span>
+                                <h3>Stack Technique</h3>
+                            </div>
+
+                            <div class="cv-skill-group">
+                                <div class="cv-skill-title">Frontend</div>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="cv-skill-group">
+                                <div class="cv-skill-title">Backend</div>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">PHP 8</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">AdonisJS</span>
+                                    <span class="tech-tag">Langage C</span>
+                                </div>
+                            </div>
+
+                            <div class="cv-skill-group">
+                                <div class="cv-skill-title">Base de données &amp; Outils</div>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Git / GitHub</span>
+                                    <span class="tech-tag">Docker</span>
+                                    <span class="tech-tag">Linux / Ubuntu</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Soft Skills & Langues -->
+                        <div class="cv-card reveal reveal-delay-1">
+                            <div class="cv-card-header">
+                                <span
+                                    style="font-size:0.82rem; font-weight:700; color:var(--primary); text-transform:uppercase; letter-spacing:0.12em;">Aptitudes</span>
+                                <h3>Soft Skills &amp; Langues</h3>
+                            </div>
+
+                            <div class="cv-skill-group">
+                                <div class="cv-skill-title">Soft Skills</div>
+                                <div class="tech-tags">
+                                    <span class="skill-pill">Travail en équipe</span>
+                                    <span class="skill-pill">Créativité</span>
+                                    <span class="skill-pill">Organisation</span>
+                                    <span class="skill-pill">Réactivité</span>
+                                </div>
+                            </div>
+
+                            <div class="cv-skill-group" style="margin-top:1.5rem;">
+                                <div class="cv-skill-title">Langues</div>
+                                <ul class="skill-list" style="margin-bottom:0;">
+                                    <li><span class="skill-bullet">◆</span> <strong>Français</strong> — Langue
+                                        maternelle</li>
+                                    <li><span class="skill-bullet">◆</span> <strong>Anglais</strong> — Bonnes notions
+                                        techniques</li>
+                                    <li><span class="skill-bullet">◆</span> <strong>Espagnol</strong> — Notions</li>
+                                    <li><span class="skill-bullet">◆</span> <strong>Japonais</strong> — En cours
+                                        d'apprentissage</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Objectif Banner -->
+                        <div class="objective-final reveal reveal-delay-2">
+                            <span class="objective-final-label">Recherche d'alternance</span>
+                            <span class="objective-final-value">Disponible pour un contrat de 2 ans en Développement
+                                Fullstack (Septembre 2025/2026)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Téléchargement -->
+        <section class="cta-section">
+            <div class="container reveal">
+                <span class="section-tag">Téléchargement</span>
+                <h2 class="section-title">Besoin d'une version papier ?</h2>
+                <p
+                    style="color:var(--text-faint); margin-top:0.5rem; max-width: 600px; margin-left:auto; margin-right:auto;">
+                    Téléchargez la version originale au format PDF en un clic.
+                </p>
+                <div class="cta-actions" style="margin-top: 1.5rem;">
+                    <a href="../assets/docs/CV Pro Thomas Pitet.pdf" class="btn btn-primary" download>
+                        Télécharger le CV (PDF)
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">
+                        Me contacter
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-logo">Thomas Pitet</div>
+            <p class="footer-sub">
+                Développeur Fullstack en formation &bull;
+                <a href="https://github.com/ThomasPitet" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/reveal.js"></script>
+    <script src="../assets/js/card.js"></script>
 </body>
+
 </html>

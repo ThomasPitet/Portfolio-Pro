@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport"
           content="width=device-width, initial-scale=1" />
-    <title>Thomas Pitet — Développeur Fullstack &amp; Motard</title>
+    <title>Thomas Pitet — Développeur Fullstack</title>
     <link rel="stylesheet"
-          href="assets/css/style.css?v=4" />
+          href="assets/css/style.css?v=5" />
+    <link rel="stylesheet"
+          href="assets/css/projets.css?v=5" />
 </head>
 <body>
 
@@ -55,26 +57,26 @@
     <div class="hero-inner">
         <div class="hero-content">
             <div class="hero-badge">
-                Rider &amp; Developer &bull;
+                Développeur Fullstack &bull; Alternance 2 ans
             </div>
             <h1 class="hero-name">
                 Thomas<br/><span class="accent">Pitet</span>
             </h1>
             <p class="hero-quote">
-                "La seul unité de mesure est le temps"
+                Conception d'applications web &amp; backend performantes, robustes et modernes.
             </p>
             <div class="hero-cta">
-                <a href="pages/projets.html"
-                   class="btn btn-primary">Mes projets</a>
-                <a href="pages/contact.html"
-                   class="btn btn-outline">Me contacter</a>
+                <a href="#projets-phares"
+                   class="btn btn-primary">Découvrir mes projets</a>
+                <a href="pages/cv.html"
+                   class="btn btn-outline">Consulter mon CV</a>
             </div>
         </div>
         <div class="hero-photo-col">
             <div class="hero-photo-ring">
                 <div class="hero-photo-inner">
                     <img src="assets/img/thomas.jpg"
-                         alt="Thomas Pitet" />
+                         alt="Thomas Pitet — Développeur Fullstack" />
                 </div>
             </div>
         </div>
@@ -97,47 +99,38 @@
         <div class="about-grid">
             <div class="about-main-card reveal reveal-delay-1">
                 <div class="about-main-content">
-                    <div class="card-icon">Cuisine</div>
-                    <h3>Biographie</h3>
+                    <div class="card-icon">Profil</div>
+                    <h3>Biographie &amp; Parcours</h3>
                     <p>
-                        Après un parcours en cuisine qui m'a appris la
-                        réactivité, je concrétise ma reconversion dans le
-                        développement web. Porté par une curiosité pour la
-                        logique du code et l'univers tech, j'ai choisi de me
-                        former en développement fullstack.
+                        Issue de la cuisine professionnelle qui m'a transmis rigueur, réactivité et gestion de la pression, ma reconversion dans le développement web est une suite logique. Passionné par l'algorithmique et les architectures logicielles, je me forme intensivement en développement Fullstack.
                     </p>
                 </div>
                 <div class="about-main-image">
-                    <img src="assets/moi/cuisine.jpg"
-                         alt="Cuisine en action" />
+                    <img src="assets/img/about/cuisine.jpg"
+                         alt="Rigueur et travail d'équipe" />
                 </div>
             </div>
             <div class="about-side-cards">
                 <div class="card reveal reveal-delay-2">
                     <div class="card-icon">Formation</div>
-                    <h3>Formation</h3>
+                    <h3>Formation Fullstack</h3>
                     <p>
-                        1ère année de développement Fullstack. Mon objectif :
-                        créer des applications modernes et performantes, tout
-                        en continuant à apprendre et évoluer dans ce domaine
-                        passionnant.
+                        En 1ère année de Bachelor Fullstack. Mon objectif : acquérir une maîtrise complète de la stack web (Node.js, PHP, SQL, JS) et concevoir des applications scalables.
                     </p>
                     <div class="about-card-image">
-                        <img src="assets/moi/travail.png"
-                             alt="Travail en écran" />
+                        <img src="assets/img/about/travail.png"
+                             alt="Développement Fullstack" />
                     </div>
                 </div>
                 <div class="card reveal reveal-delay-3">
-                    <div class="card-icon">Passion Moto</div>
-                    <h3>Passion Moto</h3>
+                    <div class="card-icon">Rigueur</div>
+                    <h3>Rigueur &amp; Code Propre</h3>
                     <p>
-                        La moto est bien plus qu'un loisir — c'est un état
-                        d'esprit. Liberté, précision, adrénaline. Je veux créer
-                        des applications qui réunissent la communauté des riders.
+                        Je privilégie le code maintenable, l'architecture propre (MVC, POO) et les bonnes pratiques de développement pour livrer des produits de qualité.
                     </p>
                     <div class="about-card-image">
-                        <img src="assets/moi/moto.jpg"
-                             alt="Moto en balade" />
+                        <img src="assets/img/about/groupe.jpg"
+                             alt="Travail d'équipe et code" />
                     </div>
                 </div>
             </div>
@@ -255,26 +248,104 @@
     </div>
 </section>
 
-<!-- OBJECTIVES -->
-<section class="section section-alt">
+<!-- FEATURED PROJECTS HOMEPAGE -->
+<section id="projets-phares" class="section section-alt">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-tag">Objectifs · 目標</span>
-            <h2 class="section-title">Mes Ambitions</h2>
+            <span class="section-tag">Réalisations · プロジェクト</span>
+            <h2 class="section-title">Mes Projets Phares</h2>
+            <p style="color:var(--text-faint); max-width:540px; margin:0.5rem auto 0;">
+                Aperçu des applications concrètes développées lors de mes projets professionnels et académiques.
+            </p>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="projects-cards-grid">
+            <!-- CorsoFleuri -->
+            <div class="proj-card reveal">
+                <div class="proj-card-icon">Restaurant</div>
+                <h3>CorsoFleuri</h3>
+                <p>
+                    Application web de prise de commande style borne McDo — gestion dynamique des menus, des commandes et impression automatique de tickets thermiques en back-office.
+                </p>
+                <div class="proj-card-tags">
+                    <span class="proj-card-tag">Node.js</span>
+                    <span class="proj-card-tag">Express</span>
+                    <span class="proj-card-tag">MySQL</span>
+                    <span class="proj-card-tag">HTML / CSS</span>
+                </div>
+                <div style="display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:auto;">
+                    <a href="projets/php/corso-fleuri.html" class="btn btn-sm btn-primary">Découvrir</a>
+                    <a href="https://github.com/NathanCBT/Corso-Fleuri" target="_blank" rel="noopener" class="btn btn-sm btn-outline">GitHub</a>
+                </div>
+            </div>
+
+            <!-- MotorFest -->
+            <div class="proj-card reveal reveal-delay-1">
+                <div class="proj-card-icon">Catalogue</div>
+                <h3>MotorFest</h3>
+                <p>
+                    Catalogue interactif et comparateur de véhicules — fiches détaillées, graphiques radar avec Chart.js, filtres dynamiques et gestion des favoris.
+                </p>
+                <div class="proj-card-tags">
+                    <span class="proj-card-tag">Node.js</span>
+                    <span class="proj-card-tag">Express</span>
+                    <span class="proj-card-tag">Chart.js</span>
+                    <span class="proj-card-tag">Tailwind</span>
+                </div>
+                <div style="display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:auto;">
+                    <a href="projets/php/motorfest.html" class="btn btn-sm btn-primary">Découvrir</a>
+                </div>
+            </div>
+
+            <!-- The League -->
+            <div class="proj-card reveal reveal-delay-2">
+                <div class="proj-card-icon">E-sport</div>
+                <h3>The League</h3>
+                <p>
+                    Plateforme de gestion de ligue E-sport en architecture MVC. Gestion des équipes, matchs et statistiques avec un routeur custom en PHP 8.
+                </p>
+                <div class="proj-card-tags">
+                    <span class="proj-card-tag">PHP 8</span>
+                    <span class="proj-card-tag">MVC</span>
+                    <span class="proj-card-tag">POO</span>
+                    <span class="proj-card-tag">MySQL</span>
+                </div>
+                <div style="display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:auto;">
+                    <a href="projets/php/the-league.html" class="btn btn-sm btn-outline">Découvrir</a>
+                    <a href="https://github.com/ThomasPitet/projet-the-League" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:2.5rem;">
+            <a href="pages/projets.html" class="btn btn-outline">
+                Voir l'ensemble de mes projets →
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- OBJECTIVES -->
+<section class="section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Ambitions · 目標</span>
+            <h2 class="section-title">Objectifs Professionnels</h2>
             <div class="section-line"></div>
         </div>
         <div class="objectives-grid">
             <div class="obj-card reveal reveal-delay-1">
-                <h3>Mes objectifs</h3>
+                <h3>Objectifs de Carrière</h3>
                 <ul>
-                    <li>Faire mes 2 ans d'alternance</li>
-                    <li>Apprendre le japonais</li>
-                    <li>Faire un séjour linguistique</li>
-                    <li>Créer une app pour la communauté motard</li>
+                    <li>Valider une alternance de 2 ans en développement Fullstack (2025-2027)</li>
+                    <li>Approfondir les architectures microservices et le DevOps (Docker, CI/CD)</li>
+                    <li>Concevoir des applications web à fort trafic et haute disponibilité</li>
+                    <li>Évoluer vers un poste de Développeur Fullstack Confirmé / Lead</li>
                 </ul>
                 <p class="objective-final">
-                    <span class="objective-final-label">Objectif final</span>
-                    <span class="objective-final-value">vivre au Japon</span>
+                    <span class="objective-final-label">Ambition Clé</span>
+                    <span class="objective-final-value">Devenir un Développeur Fullstack accompli et créateur de solutions à forte valeur ajoutée.</span>
                 </p>
             </div>
         </div>
@@ -316,5 +387,6 @@
 <script src="assets/js/reveal.js"></script>
 <script src="assets/js/skill-bars.js"></script>
 <script src="assets/js/particles.js"></script>
+<script src="assets/js/card.js"></script>
 </body>
 </html>

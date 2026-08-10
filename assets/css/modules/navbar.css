@@ -75,15 +75,16 @@
     background: linear-gradient(135deg,
                                 var(--primary),
                                 var(--primary-dark));
-    color: white;
+    color: #ffffff !important;
     padding: 0.45rem 1.1rem;
     border-radius: var(--radius-sm);
     box-shadow: 0 10px 30px rgba(239, 35, 94, 0.18);
 }
 
 .nav-cta:hover {
+    color: #ffffff !important;
     transform: translateY(-1px);
-    filter: brightness(1.05);
+    filter: brightness(1.12);
 }
 
 .hamburger {

@@ -125,7 +125,7 @@
     padding: 2rem;
     border-radius: var(--radius);
     background: linear-gradient(rgba(5, 7, 15, 0.84), rgba(5, 7, 15, 0.84)),
-                url('../../moi/lumineux.jpg') center/cover no-repeat;
+                url('../img/lumineux.jpg') center/cover no-repeat;
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -305,4 +305,113 @@
     color: #ffffff;
     font-size: 0.95rem;
     line-height: 1.5;
+}
+
+/* ==========================================================================
+   CV SECTION & TIMELINE STYLES
+   ========================================================================== */
+.cv-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.cv-card {
+    background: rgba(15, 23, 42, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2rem;
+}
+
+.cv-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cv-card-header h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+
+.cv-timeline {
+    position: relative;
+    padding-left: 1.5rem;
+    border-left: 2px solid rgba(239, 35, 94, 0.25);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.75rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -1.95rem;
+    top: 0.25rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.timeline-date {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+
+.timeline-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+}
+
+.timeline-sub {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-desc {
+    font-size: 0.88rem;
+    color: var(--text-faint);
+    line-height: 1.6;
+}
+
+.cv-skill-group {
+    margin-bottom: 1.25rem;
+}
+
+.cv-skill-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .cv-layout {
+        grid-template-columns: 1fr;
+    }
 }

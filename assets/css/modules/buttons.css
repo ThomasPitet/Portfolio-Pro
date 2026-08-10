@@ -20,29 +20,32 @@
     background: linear-gradient(135deg,
                                 var(--primary),
                                 var(--primary-dark));
-    color: #fff;
+    color: #ffffff !important;
     box-shadow: 0 12px 30px rgba(239, 35, 94, 0.24);
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #ffffff !important;
     transform: translateY(-2px);
-    box-shadow: 0 16px 32px rgba(239, 35, 94, 0.26);
-    filter: brightness(1.08);
+    box-shadow: 0 16px 32px rgba(239, 35, 94, 0.35);
+    filter: brightness(1.12);
 }
 
 .btn-outline {
     background: transparent;
     color: var(--text);
-    border: 1px solid rgba(239, 35, 94, 0.25);
+    border: 1px solid rgba(239, 35, 94, 0.35);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-.btn-outline:hover {
-    background: rgba(239, 35, 94, 0.08);
-    color: var(--primary);
-    border-color: var(--primary);
+.btn-outline:hover,
+.btn-outline:focus {
+    background: rgba(239, 35, 94, 0.15);
+    color: #ffffff !important;
+    border-color: var(--primary-light);
     transform: translateY(-2px);
-    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 14px 34px rgba(239, 35, 94, 0.2);
 }
 
 .btn-sm {
